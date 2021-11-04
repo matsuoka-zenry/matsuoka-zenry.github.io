@@ -5,29 +5,111 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
+  <title>folio</title>
+  <meta name="description" content="folio">
+  <meta name="author" content="zen">
 
-  <meta property="og:title" content="A Basic HTML5 Template">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-  <meta property="og:image" content="image.png">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <a href="/mod1/index.html">Mod 1</a>
-  <a href="/mod2//index.html">Mod 2</a>
-  <a href="/mod3/index.html">Mod 3</a>
-  <a href="/mod4/index.html">Mod 4</a>
-  <script src="js/scripts.js"></script>
+  
+  <div class="back"></div>
+  <div class="zen">zen</div>
+  <div class="middle"></div>
+  
+  <main class="Loop js-loop">
+    <section class="mod1">
+      <a href="mod1/index.html">
+        mod 1
+        <img src="mod1/img/frontcut.png"><img src="mod1/img/frontr.png" id="front">
+        <!-- <p id="title">mod 1</p> -->
+      </a>
+    </section>
+
+    <section class="mod2">
+      <a href="mod2/index.html" id = "mod2">
+        <img src="mod2/img/cs.png"><img src="mod2/img/csr.png" id="front">
+      </a>
+    </section>
+
+    <section class="three">
+      <h1>All</h1>
+    </section>
+    <section class="four">
+      <h1>And</h1>
+    </section>
+  
+    <!--
+    These blocks are the same as the first blocks to get that looping illusion going.
+    You need to add clones to fill out a full viewport height.
+    -->
+    <section class="mod1 is-clone">
+      <a href="mod1/index.html">
+        mod 1
+        <img src="mod1/img/frontcut.png"><img src="mod1/img/frontr.png" id="front">
+        <!-- <p id="title">mod 1</p> -->
+      </a>
+    </section>
+
+    <section class="mod2 is-clone">
+      <a href="mod2/index.html" id = "mod2">
+        <img src="mod2/img/cs.png"><img src="mod2/img/csr.png" id="front">
+      </a>
+    </section>
+<!--     
+    <a href="mod1/index.html">
+      <section class="mod1 mod">
+        <img src="mod1/img/frontcut.png"><img src="mod1/img/frontr.png" id="front">
+        <p id="title">mod 1</p>
+      </section>
+    </a>
+
+    <a href="mod2/index.html" id = "mod2">
+      <section class="mod2 mod">
+        <img src="mod2/img/cs.png"><img src="mod2/img/csr.png" id="front">
+        <p id="title">mod 2</p>
+      </section>
+    </a>
+
+    <a href="mod3/index.html">
+      <section class="mod3 mod">
+        <p id="title">mod 3</p>
+      </section>
+    </a>
+
+    <a href="mod4/index.html">
+      <section class="mod4 mod">
+        <p id="title">mod 4</p>
+      </section>
+    </a>
+
+    <a href="mod1/index.html">
+      <section class="mod1 mod is-clone">
+        <img src="mod1/img/frontcut.png"><img src="mod1/img/frontr.png" id="front">
+        <p id="title">mod 1</p>
+      </section>
+    </a>
+
+    <a href="mod2//index.html" id = "mod2">
+      <section class="mod2 mod is-clone">
+        <img src="mod2/img/cs.png"><img src="mod2/img/csr.png" id="front">
+        <p id="title">mod 2</p>
+      </section>
+    </a> -->
+  </main> 
+  <script src="scroll.js"></script>
+  <script>
+    const root = document.documentElement;
+
+    document.addEventListener('mousemove', evt => {
+      let x = evt.clientX / innerWidth;
+      let y = evt.clientY / innerHeight;
+
+      root.style.setProperty('--mouse-x', x);
+      root.style.setProperty('--mouse-y', y);
+    });
+  </script>
 </body>
 </html>

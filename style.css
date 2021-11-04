@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: VulfSans;
+    src: url("font/VulfSansDemo-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: VulfSans;
+    font-weight: bold;
+    src: url("font/VulfSansDemo-Bold.otf") format("opentype");
+}
+
+* {
+  font-family: VulfSans;
+}
+
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  min-height: 300px;
+  max-height: 700px;
+  height: 80%;
+}
+
+::scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+
+
+.back {
+    height: 100vh;
+    width: 100vw;
+    /* background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(226, 226, 226), #ffffff) no-repeat 0 0; */
+    background-position:center;
+    position: fixed;
+}
+
+.mod1 img{
+    width: 20%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 20vw;
+    position: absolute;
+}
+.mod2 img{
+    width: 20%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 60vw;
+
+    position: absolute;
+}
+
+
+.mod1 img:hover{
+    opacity: 0;
+}
+
+.mod2 img:hover{
+    opacity: 0;
+}
+
+.zen {
+    font-size: calc(8vh + (var(--mouse-x, 0)*1vh) - (var(--mouse-y, 0)*1vh));
+    top: 5%;
+    right: 5%;
+    position: absolute;
+}
+
+.middle {
+    background-color: rgb(255, 222, 220);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    overflow-x: hidden;
+    width: 40vw;
+    height: 150vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
+
+}

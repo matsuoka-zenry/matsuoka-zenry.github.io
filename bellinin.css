@@ -1,6 +1,6 @@
-.photos img{
-    top: 40%;
-    height: 25%;
+.samples img{
+    top: 35%;
+    height: 40%;
     opacity: 1;
     transition: opacity 0.5s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
     display: block;
@@ -8,26 +8,26 @@
     position: absolute;
 }
 
-.photos h1 {
+.samples h1 {
     right: 5%;
 }
 
 
-.layout img{
+.studies img{
     top: 20%;
     height: 60%;
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: left 0.5s;
     display: block;
-    margin-left: 15vw;
+    margin-left: 10vw;
     position: absolute;
 }
 
-.layout h1 {
+.studies h1 {
     left: 5%;
 }
 
-.drawings img{
+.panels img{
     top: 20%;
     height: 60%;
     opacity: 1;
@@ -37,63 +37,26 @@
     position: absolute;
 }
 
-.drawings h1 {
+.panels h1 {
     right: 5%;
 }
 
 
-.axo img{
-    top: 20%;
-    height: 60%;
+.composite img{
+    top: 15%;
+    height: 80%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 15vw;
+    margin-left: 20vw;
     
     position: absolute;
 }
 
-.axo h1 {
+.composite h1 {
     left: 5%;
 }
 
 #lines {
     opacity: 0;
 }
-
-.mod1 img:hover{
-    opacity: 0;
-}
-
-.photos:hover #a {
-    top: 0%;
-}
-
-.photos:hover #b {
-    top: 25%;
-}
-
-.photos:hover #c {
-    top: -25%;
-}
-
-.photos:hover #d {
-    top: 50%;
-}
-
-.photos:hover #e {
-    top: 75%;
-}
-
-.photos:hover #f {
-    top: 100%;
-}
-
-.layout:hover #lines{
-    opacity: 1;
-}
-
-.drawings:hover #lines{
-    opacity: 1;
-}
-

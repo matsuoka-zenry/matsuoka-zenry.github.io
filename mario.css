@@ -1,6 +1,6 @@
-.photos img{
+.elevations img{
     top: 40%;
-    height: 25%;
+    height: 30%;
     opacity: 1;
     transition: opacity 0.5s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
     display: block;
@@ -8,26 +8,26 @@
     position: absolute;
 }
 
-.photos h1 {
+.elevations h1 {
     right: 5%;
 }
 
 
-.layout img{
+.drawings img{
     top: 20%;
     height: 60%;
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: left 0.5s;
     display: block;
-    margin-left: 15vw;
+    margin-left: 20vw;
     position: absolute;
 }
 
-.layout h1 {
+.drawings h1 {
     left: 5%;
 }
 
-.drawings img{
+.illustrator img{
     top: 20%;
     height: 60%;
     opacity: 1;
@@ -37,63 +37,42 @@
     position: absolute;
 }
 
-.drawings h1 {
+.illustrator h1 {
     right: 5%;
 }
 
 
-.axo img{
-    top: 20%;
-    height: 60%;
+.render img{
+    top: 15%;
+    height: 80%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 15vw;
+    margin-left: 20vw;
     
     position: absolute;
 }
 
-.axo h1 {
+.render h1 {
     left: 5%;
-}
-
-#lines {
-    opacity: 0;
 }
 
 .mod1 img:hover{
     opacity: 0;
 }
 
-.photos:hover #a {
-    top: 0%;
+.drawings:hover #a {
+    left: -5%;
 }
 
-.photos:hover #b {
-    top: 25%;
+.drawings:hover #b {
+    left: 10%;
 }
 
-.photos:hover #c {
-    top: -25%;
+.r {
+    margin-left: 15%;
 }
 
-.photos:hover #d {
-    top: 50%;
+.illustrator:hover #fade {
+    opacity: 0;
 }
-
-.photos:hover #e {
-    top: 75%;
-}
-
-.photos:hover #f {
-    top: 100%;
-}
-
-.layout:hover #lines{
-    opacity: 1;
-}
-
-.drawings:hover #lines{
-    opacity: 1;
-}
-

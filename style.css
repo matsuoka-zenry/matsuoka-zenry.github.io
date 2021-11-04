@@ -149,7 +149,6 @@ h1 {
     transform: translateY(-50%);
     width: 100%;
     transition: font-size 0.5s, top 0.5s;
-
 }
 
 .mod1 h1 {
@@ -179,6 +178,25 @@ h1 {
     top: 60%;
 }
 
+#top-up {
+    color: rgba(255, 0, 0, 0.562);
+    top: 40%;
+}
+
+#mid-up {
+    color: white;
+}
+
+#bot-up {
+    color: rgba(255, 115, 0, 0.781);
+    top: 60%;
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
 .title :hover {
     top: 50%;
 }
@@ -189,6 +207,22 @@ section:hover #top{
 
 section:hover #bot{
     top: 50%;
+}
+
+section:hover #top-up{
+    top: 15%;
+}
+
+section:hover #mid-up{
+    top: 15%;
+}
+
+section:hover #bot-up{
+    top: 15%;
+}
+
+section:hover .text {
+    opacity: 1;
 }
 
 .middle {

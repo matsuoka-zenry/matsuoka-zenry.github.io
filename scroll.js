@@ -76,6 +76,6 @@ if (document.readyState !== 'loading') {
   doc.addEventListener('DOMContentLoaded', init, false)
 }
 
-window.onload = function () {
-  setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (context.offsetHeight - clones[0].offsetHeight) / 2));
-};
+// window.onload = function () {
+//   setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (context.offsetHeight - clones[0].offsetHeight) / 2));
+// };

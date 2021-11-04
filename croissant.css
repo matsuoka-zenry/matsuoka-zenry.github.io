@@ -1,0 +1,52 @@
+.photos img{
+    top: 20%;
+    height: 40%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 60vw;
+    position: absolute;
+}
+
+.layout img{
+    top: 20%;
+    height: 60%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 20vw;
+    position: absolute;
+}
+
+.drawings img{
+    top: 20%;
+    height: 60%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 60vw;
+    position: absolute;
+}
+
+.axo img{
+    top: 20%;
+    height: 60%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 20vw;
+
+    position: absolute;
+}
+
+.mod1 img:hover{
+    opacity: 0;
+}
+
+.layout img:hover{
+    opacity: 0;
+}
+
+.drawings img:hover{
+    opacity: 0;
+}

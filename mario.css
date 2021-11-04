@@ -57,10 +57,6 @@
     left: 5%;
 }
 
-.mod1 img:hover{
-    opacity: 0;
-}
-
 .drawings:hover #a {
     left: -5%;
 }

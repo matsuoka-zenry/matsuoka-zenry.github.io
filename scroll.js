@@ -76,14 +76,6 @@ if (document.readyState !== 'loading') {
   doc.addEventListener('DOMContentLoaded', init, false)
 }
 
-
-
-
-
-
-
-
-// Just for this demo: Center the middle block on page load
 window.onload = function () {
   setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (context.offsetHeight - clones[0].offsetHeight) / 2));
 };

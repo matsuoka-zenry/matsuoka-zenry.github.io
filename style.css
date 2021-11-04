@@ -60,7 +60,7 @@ body {
 }
 
 .mod1 img{
-    width: 20%;
+    height: 30%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
@@ -69,7 +69,7 @@ body {
 }
 
 .mod2 img{
-    width: 20%;
+    height: 60%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
@@ -79,7 +79,7 @@ body {
 }
 
 .mod3 img{
-    width: 20%;
+    height: 40%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
@@ -88,11 +88,11 @@ body {
 }
 
 .mod4 img{
-    width: 30%;
+    height: 70%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 60vw;
+    margin-left: 55vw;
 
     position: absolute;
 }
@@ -131,4 +131,30 @@ body {
     margin-left: 30vw;
     margin-right: 30vw;
 
+}
+
+.back1 {
+    transform: rotate(60deg); 
+    background: rgb(255,165,130);
+    background: linear-gradient(0deg, rgba(255,165,130,1) 0%, rgba(255,203,203,1) 100%);
+    filter: hue-rotate(calc(var(--mouse-y, 0) * 100deg - 70deg));
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
+    position: absolute;
+    overflow-x: hidden;
+    width: 50vw;
+    height: 200vh;
+    margin-left: 45vw;
+}
+
+.back2 {
+    transform: rotate(70deg); 
+    background: rgb(255,165,130);
+    background: linear-gradient(0deg, rgba(255,165,130,1) 0%, rgba(255,203,203,1) 100%);
+    filter: hue-rotate(calc(var(--mouse-y, 0) * -60deg + 30deg));
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
+    position: absolute;
+    overflow-x: hidden;
+    width: 50vw;
+    height: 250vh;
+    left: 40vw;
 }

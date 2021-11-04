@@ -60,7 +60,8 @@ body {
 }
 
 .mod1 img{
-    height: 30%;
+    max-height: 30%;
+    max-width: 20%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
@@ -114,9 +115,17 @@ body {
 }
 
 .zen {
-    font-size: calc(8vh + (var(--mouse-x, 0)*1vh) - (var(--mouse-y, 0)*1vh));
-    top: 5%;
+    font-size: calc(8vh + (var(--mouse-x, 0)*0.5vh) - (var(--mouse-y, 0)*0.5vh));
+    top: 2.5%;
     right: 5%;
+    position: absolute;
+}
+
+.fodr {
+    font-weight: normal;
+    font-size: calc(4vh - (var(--mouse-x, 0)*0.2vh) + (var(--mouse-y, 0)*0.2vh));
+    bottom: 2.5%;
+    left: 2.55%;
     position: absolute;
 }
 

@@ -10,6 +10,12 @@
     src: url("font/VulfSansDemo-Bold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: VulfMono;
+    font-weight: black;
+    src: url("font/VulfMonoDemo-Black.otf") format("opentype");
+}
+
 * {
   font-family: VulfSans;
 }
@@ -25,6 +31,7 @@ body {
   position: relative;
   height: 100%;
   overflow: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -60,6 +67,7 @@ body {
 }
 
 .mod1 img{
+    top: 35%;
     max-height: 30%;
     max-width: 20%;
     opacity: 1;
@@ -70,16 +78,17 @@ body {
 }
 
 .mod2 img{
+    top: 20%;
     height: 60%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
     margin-left: 60vw;
-
     position: absolute;
 }
 
 .mod3 img{
+    top: 30%;
     height: 40%;
     opacity: 1;
     transition: opacity 0.5s;
@@ -89,6 +98,7 @@ body {
 }
 
 .mod4 img{
+    top: 20%;
     height: 70%;
     opacity: 1;
     transition: opacity 0.5s;
@@ -127,6 +137,58 @@ body {
     bottom: 2.5%;
     left: 2.55%;
     position: absolute;
+}
+
+h1 {
+    font-family: VulfMono;
+    font-weight: black;
+    font-size: 5vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    transition: font-size 0.5s, top 0.5s;
+
+}
+
+.mod1 h1 {
+    left: 5%;
+}
+.mod2 h1 {
+    right: 5%;
+}
+.mod3 h1 {
+    left: 5%;
+}
+.mod4 h1 {
+    right: 5%;
+}
+
+#top {
+    color: rgba(255, 0, 0, 0.562);
+    top: 40%;
+}
+
+#mid {
+    color: white;
+}
+
+#bot {
+    color: rgba(255, 115, 0, 0.781);
+    top: 60%;
+}
+
+.title :hover {
+    top: 50%;
+}
+
+section:hover #top{
+    top: 50%;
+}
+
+section:hover #bot{
+    top: 50%;
 }
 
 .middle {

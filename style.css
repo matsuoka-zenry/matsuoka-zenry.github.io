@@ -46,14 +46,17 @@ body {
   font-size: 100%;
 }
 
-
-
 .back {
     height: 100vh;
     width: 100vw;
     /* background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), rgb(226, 226, 226), #ffffff) no-repeat 0 0; */
     background-position:center;
     position: fixed;
+}
+
+#front {
+    filter: sepia(100%) saturate(100%) brightness(100%) hue-rotate(calc(var(--mouse-y, 0) * 50deg - 50deg));
+
 }
 
 .mod1 img{
@@ -64,6 +67,7 @@ body {
     margin-left: 20vw;
     position: absolute;
 }
+
 .mod2 img{
     width: 20%;
     opacity: 1;
@@ -74,12 +78,38 @@ body {
     position: absolute;
 }
 
+.mod3 img{
+    width: 20%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 20vw;
+    position: absolute;
+}
+
+.mod4 img{
+    width: 30%;
+    opacity: 1;
+    transition: opacity 0.5s;
+    display: block;
+    margin-left: 60vw;
+
+    position: absolute;
+}
 
 .mod1 img:hover{
     opacity: 0;
 }
 
 .mod2 img:hover{
+    opacity: 0;
+}
+
+.mod3 img:hover{
+    opacity: 0;
+}
+
+.mod4 img:hover{
     opacity: 0;
 }
 
@@ -91,8 +121,9 @@ body {
 }
 
 .middle {
-    background-color: rgb(255, 222, 220);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: rgb(255,165,130);
+    background: linear-gradient(0deg, rgba(255,165,130,1) 0%, rgba(255,203,203,1) 100%);
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
     position: absolute;
     overflow-x: hidden;
     width: 40vw;

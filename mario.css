@@ -29,12 +29,16 @@
 
 .illustrator img{
     top: 20%;
-    height: 60%;
+    height: 50%;
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 55vw;
+    margin-left: 60vw;
     position: absolute;
+    background-color: white;
+    margin-top: 4%;
+    padding: 1%;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
 }
 
 .illustrator h1 {
@@ -70,7 +74,7 @@
 }
 
 .r {
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .illustrator:hover #fade {

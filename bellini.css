@@ -14,17 +14,28 @@
 
 
 .studies img{
-    top: 20%;
+    top: 30%;
     height: 60%;
     opacity: 1;
-    transition: left 0.5s;
+    transition: left 0.5s, height 0.5s;
     display: block;
-    margin-left: 10vw;
+    margin-left: 5vw;
     position: absolute;
+    background-color: white;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
 }
 
 .studies h1 {
     left: 10%;
+}
+
+.studies .text {
+    top: 30%;
+    transform: translateX(48%);
+}
+
+.studies:hover img {
+    height: 65%;
 }
 
 .panels img{
@@ -57,6 +68,14 @@
     left: 5%;
 }
 
+.composite:hover #fade{
+    opacity: 0;
+}
+
+.composite .text {
+    top: 30%;
+    transform: translateX(25%);
+}
 
 .panels:hover img {
     height: 15%;

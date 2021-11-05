@@ -108,21 +108,9 @@ body {
     position: absolute;
 }
 
-section :hover #front{
+section:hover #front{
     opacity: 0;
 }
-
-/* .mod2 img:hover{
-    opacity: 0;
-}
-
-.mod3 img:hover{
-    opacity: 0;
-}
-
-.mod4 img:hover{
-    opacity: 0;
-} */
 
 .zen {
     font-size: calc(8vh + (var(--mouse-x, 0)*0.5vh) - (var(--mouse-y, 0)*0.5vh));

@@ -1,30 +1,63 @@
 .elevations img{
-    top: 40%;
+    top: 38%;
     height: 30%;
     opacity: 1;
     transition: opacity 0.5s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
     display: block;
-    margin-left: 60vw;
+    margin-left: 58vw;
     position: absolute;
+}
+
+.elevations #up {
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
 }
 
 .elevations h1 {
     right: 5%;
 }
 
+.elevations .text {
+    top: 30%;
+    transform: translateX(-30%);
+}
+
+.elevations #down {
+    top: 55%;
+    opacity: 0;
+    margin-left: 62vw;
+}
+
+.elevations:hover #down {
+    opacity: 1;
+}
+.elevations:hover #up {
+    top: 15%;
+}
 
 .drawings img{
     top: 20%;
     height: 60%;
     opacity: 1;
-    transition: left 0.5s;
+    transition: top 0.5s;
     display: block;
     margin-left: 20vw;
     position: absolute;
 }
 
 .drawings h1 {
-    left: 5%;
+    left: 6%;
+}
+
+.drawings .text {
+    top: 30%;
+    transform: translateX(30%);
+}
+.drawings:hover #a {
+    top: 0%;
+}
+
+.drawings:hover #b {
+    top: 50%;
 }
 
 .illustrator img{
@@ -51,27 +84,26 @@
 }
 
 .render img{
-    top: 15%;
-    height: 80%;
-    opacity: 1;
-    transition: opacity 0.5s;
+    top: 30%;
+    width: 15%;
+    opacity: 0;
+    transition: width 0.5s, opacity 0.5s;
     display: block;
-    margin-left: 20vw;
-    
+    margin-left: 33vw;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
     position: absolute;
 }
 
-.render h1 {
-    left: 5%;
+.render:hover img{
+    opacity: 1;
 }
 
-.drawings:hover #a {
-    left: -5%;
+.render .text {
+    top: 30%;
+    transform: translateX(54%);
+    font-size: 1.2vh;
 }
 
-.drawings:hover #b {
-    left: 10%;
-}
 
 .r {
     margin-left: 20%;

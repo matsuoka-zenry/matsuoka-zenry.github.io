@@ -6,6 +6,7 @@
     display: block;
     margin-left: 60vw;
     position: absolute;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.1);
 }
 
 .photos h1 {
@@ -13,6 +14,7 @@
 }
 
 .photos .text {
+    top: 30%;
     transform: translateX(-24%);
 }
 
@@ -31,6 +33,12 @@
     left: 8%;
 }
 
+.layout .text {
+    top: 30%;
+    transform: translateX(40%);
+}
+
+
 .drawings img{
     top: 20%;
     height: 60%;
@@ -46,8 +54,8 @@
 }
 
 .drawings .text {
-    top: 35%;
-    transform: translateX(-28%);
+    top: 30%;
+    transform: translateX(-30%);
 }
 
 .axo img{
@@ -69,9 +77,25 @@
     top: 30%;
     transform: translateX(38%);
 }
-
-#lines {
+.reflection img{
+    top: 30%;
+    width: 15%;
     opacity: 0;
+    transition: width 0.5s, opacity 0.5s;
+    display: block;
+    margin-left: 33vw;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
+    position: absolute;
+}
+
+.reflection:hover img{
+    opacity: 1;
+}
+
+.reflection .text {
+    top: 30%;
+    transform: translateX(54%);
+    font-size: 1.2vh;
 }
 .photos:hover #a {
     top: 0%;

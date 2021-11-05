@@ -2,7 +2,7 @@
     top: 20%;
     height: 60%;
     opacity: 1;
-    transition: opacity 0.5s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
+    transition: opacity 0.5s, height 0.5s;
     display: block;
     margin-left: 60vw;
     position: absolute;
@@ -12,6 +12,14 @@
     right: 5%;
 }
 
+.samples:hover img {
+    height: 65%;
+}
+
+.samples .text {
+    top: 30%;
+    transform: translateX(-35%);
+}
 
 .studies img{
     top: 30%;

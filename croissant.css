@@ -12,6 +12,10 @@
     right: 5%;
 }
 
+.photos .text {
+    transform: translateX(-24%);
+}
+
 
 .layout img{
     top: 20%;
@@ -24,7 +28,7 @@
 }
 
 .layout h1 {
-    left: 5%;
+    left: 8%;
 }
 
 .drawings img{
@@ -41,6 +45,10 @@
     right: 5%;
 }
 
+.drawings .text {
+    top: 35%;
+    transform: translateX(-28%);
+}
 
 .axo img{
     top: 20%;
@@ -54,17 +62,17 @@
 }
 
 .axo h1 {
-    left: 5%;
+    left: 8%;
+}
+
+.axo .text {
+    top: 30%;
+    transform: translateX(38%);
 }
 
 #lines {
     opacity: 0;
 }
-
-.mod1 img:hover{
-    opacity: 0;
-}
-
 .photos:hover #a {
     top: 0%;
 }

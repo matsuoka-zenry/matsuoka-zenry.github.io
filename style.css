@@ -83,7 +83,7 @@ body {
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 60vw;
+    margin-left: 62vw;
     position: absolute;
 }
 
@@ -93,7 +93,7 @@ body {
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 20vw;
+    margin-left: 22vw;
     position: absolute;
 }
 
@@ -103,16 +103,16 @@ body {
     opacity: 1;
     transition: opacity 0.5s;
     display: block;
-    margin-left: 55vw;
+    margin-left: 57vw;
 
     position: absolute;
 }
 
-.mod1 img:hover{
+section :hover #front{
     opacity: 0;
 }
 
-.mod2 img:hover{
+/* .mod2 img:hover{
     opacity: 0;
 }
 
@@ -122,7 +122,7 @@ body {
 
 .mod4 img:hover{
     opacity: 0;
-}
+} */
 
 .zen {
     font-size: calc(8vh + (var(--mouse-x, 0)*0.5vh) - (var(--mouse-y, 0)*0.5vh));
@@ -195,6 +195,16 @@ h1 {
 .text {
     opacity: 0;
     transition: opacity 0.5s;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 40vw;
+    margin-right: 40vw;
+    text-align: justify;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
 }
 
 .title :hover {

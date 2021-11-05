@@ -41,6 +41,10 @@
     right: 5%;
 }
 
+.illustrator .text {
+    top: 30%;
+    transform: translateX(-30%);
+}
 
 .render img{
     top: 15%;

@@ -52,6 +52,10 @@
     right: 6%;
 }
 
+.panels .text {
+    top: 30%;
+    transform: translateX(-35%);
+}
 
 .composite img{
     top: 15%;
@@ -75,6 +79,27 @@
 .composite .text {
     top: 30%;
     transform: translateX(25%);
+}
+
+.reflection img{
+    top: 30%;
+    width: 15%;
+    opacity: 0;
+    transition: width 0.5s, opacity 0.5s;
+    display: block;
+    margin-left: 33vw;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.3);
+    position: absolute;
+}
+
+.reflection:hover img{
+    opacity: 1;
+}
+
+.reflection .text {
+    top: 30%;
+    transform: translateX(54%);
+    font-size: 1.2vh;
 }
 
 .panels:hover img {
